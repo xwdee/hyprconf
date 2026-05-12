@@ -1,0 +1,12 @@
+# backups
+*.bak
+*.old
+*.orig
+
+# temp
+*.tmp
+*.swp
+*~
+
+# logs
+*.log
