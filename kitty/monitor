@@ -1,0 +1,28 @@
+#!/bin/kitty --session
+# Windows Settings
+os_window_size 84c 34c
+layout splits
+
+# SWAP / zRam Monitor
+launch --location=hsplit --title=SWAPs watch -n1 cat /proc/swaps
+
+# BTop / General Monitor
+launch --location=hsplit --title=BTop sh -c 'exec btop --no-tty'
+
+# New Tab - Advanced
+new_tab Advanced
+
+# Monitoring with SCX
+launch --location=hsplit --title=SCXTop sh -c 'exec scxtop'
+
+# New Tab - Enhanced
+new_tab Enhanced
+
+# SOCKS5 Proxy / socat porting
+launch --location=hsplit --title=SOCKS5 flog.sh /home/xunta/.cache/sd-socatportfwd.log
+
+# PreCleaned Shell / Zsh
+launch --location=hsplit --title=CleanShell env --ignore-environment zsh
+
+# Sharing Files / miniserve
+launch --location=hsplit --title=FilesToShare flog.sh /home/xunta/.cache/sd-sharedfiles.log

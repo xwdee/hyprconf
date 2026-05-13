@@ -1,0 +1,18 @@
+#############################
+### ENVIRONMENT VARIABLES ###
+#############################
+
+# Aquamarine Environment Variables
+export AQ_DRM_DEVICES=/dev/dri/card1:/dev/dri/card0
+export AQ_TRACE=0
+export AQ_FORCE_LINEAR_BLIT=0
+export AQ_NO_ATOMIC=0
+export AQ_NO_MGPU_EXPLICIT=1
+export AQ_NO_MODIFIERS=1
+
+# Hyprland Environment Variables
+export HYPRLAND_CONFIG=~/.config/hypr/hypruwsm.conf
+export HYPRLAND_TRACE=0
+export HYPRLAND_NO_RT=1
+export HYPRLAND_NO_SD_NOTIFY=0
+export HYPRLAND_NO_SD_VARS=0
