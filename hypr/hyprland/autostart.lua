@@ -6,7 +6,7 @@ hl.on("hyprland.start", function ()
 	hl.exec_cmd("uwsm finalize")
 	hl.exec_cmd("xrdb -merge ~/.Xresources")
 
-	-- Is Supported?
-	-- hl.exec_cmd("[workspace 5 silent] $volumctrl")
-	-- hl.exec_cmd("[workspace special:running silent] $terminal --session monitor")
+	-- idk is `silent` rule has been support...
+	-- hl.exec_cmd(volumctrl, {workspace = 5, silent = true})
+	-- hl.exec_cmd(terminal .. " --session monitor", {workspace = "special:running", silent = true})
 end)

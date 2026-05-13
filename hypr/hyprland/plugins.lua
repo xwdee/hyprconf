@@ -4,12 +4,10 @@ hl.config({
 		-- Panel over Windows
 		hyprbars = {
 			enabled = true,
-			--- FIX ME
-			-- bar_color = $base
+			bar_color = base,
 			bar_height = 28,
 			bar_blur = true,
-			--- FIX ME
-			-- col.text = $text
+			col.text = text,
 			bar_title_enabled = true,
 			bar_text_size = 16,
 			bar_text_font = "Maple Mono Light",
@@ -17,8 +15,10 @@ hl.config({
 			bar_buttons_alignment = "right",
 			bar_padding = 10,
 			bar_button_padding = 8,
-			--- FIX ME
-			-- inactive_button_color = $crust
+			inactive_button_color = crust,
+			add_button({bg_color = mantle, size = 26, icon = "", action = "hyprctl dispatch killactive"})
+			add_button({bg_color = mantle, size = 26, icon = "", action = "hyprctl dispatch fullscreen 1"})
+			add_button({bg_color = mantle, size = 26, icon = "", action = "hyprland-minimizer"})
 		},
 		-- Dynamic Cursors
 		dynamic-cursors = {
@@ -42,7 +42,3 @@ hl.config({
 		}
 	}
 )
---- FIX ME
--- hyprbars-button = $mantle, 24, , hyprctl dispatch killactive
--- hyprbars-button = $mantle, 24, , hyprctl dispatch fullscreen 1
--- hyprbars-button = $mantle, 24, , hyprland-minimizer

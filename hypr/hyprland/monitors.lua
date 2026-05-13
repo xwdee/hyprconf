@@ -6,7 +6,7 @@ hl.monitor(
 		mode = "1920x1080@144",
 		position = "0x0",
 		scale = 1.00,
-		bitdepth = 10
+		bitdepth = 10,
 	},
 
 	-- Extra
@@ -16,5 +16,5 @@ hl.monitor(
 		position = "1920x60",
 		scale = 1.00,
 		bitdepth = 10,
-	}
+	},
 )

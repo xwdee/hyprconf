@@ -1,5 +1,5 @@
--- Main configuration for UWSM Mode
--- source: https://github.com/xwdee/hyprconf
+--- Main configuration for UWSM Mode
+--- source: https://github.com/xwdee/hyprconf
 
 -- Colors Pallete
 require("hyprland/colors")
@@ -36,13 +36,12 @@ hl.config({
 		gaps_out = 4,
 		border_size = 2,
 		col = {
-			--- FIX ME
-			-- active_border = $blue $base $base $blue 45deg
-			-- inactive_border = $blue $base $base $blue 45deg
+			active_border = {color = {blue, base, base, blue}, angle = 45deg}},
+			inactive_border = {color = {blue, base, base, blue}, angle = 45deg}},
 		},
 		resize_on_border = false,
 		allow_tearing = false,
-		layout = dwindle
+		layout = "dwindle",
 	},
 	decoration = {
 		rounding = 10,
@@ -53,22 +52,19 @@ hl.config({
 			enabled = true,
 			range = 6,
 			render_power = 4,
-			--- FIX ME
-			-- color = $crust
+			color = crust,
 		},
 		blur = {
 			enabled = true,
 			size = 12,
 			passes = 2,
-		}
+		},
 	},
 	dwindle = {
-		-- Deleted?
-		-- pseudotile = true
-		preserve_split = true
+		preserve_split = true,
 	},
 	master = {
-		new_status = master
+		new_status = "master",
 	},
 	misc = {
 		force_default_wallpaper = false,
@@ -76,7 +72,6 @@ hl.config({
 		disable_splash_rendering = true,
 		vrr = 0,
 	},
-
 	-- Keyboard
 	input = {
 		kb_layout = "us,ua,ru",
@@ -88,12 +83,12 @@ hl.config({
 		sensitivity = 0,
 		touchpad = {
 			natural_scroll = false,
-		}
+		},
 	},
+})
 
-	-- Mouse
-	device = {
-		name = "epic-mouse-v1",
-		sensitivity = -0.6
-	}
-}
+-- Mouse
+hl.device({
+	name = "epic-mouse-v1",
+	sensitivity = -0.6,
+})

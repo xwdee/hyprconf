@@ -1,30 +1,30 @@
--- Minimal Configuration for Hyprland
+---- Minimal Configuration for Hyprland
 
--- Main Monitor
+--- Main Monitor
 require("hyprland/monitors")
 
--- Import Colors Vars
+--- Import Colors Vars
 require("hyprland/colors")
 
--- Plugins Configurations
+--- Plugins Configurations
 require("hyprland/plugins")
 hl.on("hyprland.start", function ()
 	hl.exec_cmd("hyprpm reload --notify")
 end)
 
--- Environment Variables
+--- Environment Variables
 require("hyprland/envvars")
 
--- Programs
+--- Programs
 require("hyprland/programs")
 
--- Keybinds
+--- Keybinds
 require("hyprland/keybinds")
 
--- Animation, Winrules, and Workspaces
+--- Animation, Winrules, and Workspaces
 require("hyprland/animations")
 require("hyprland/winrules")
 require("hyprland/workspaces")
 
--- Basic animations and Cosmetics
+--- Basic animations and Cosmetics
 -- ....
