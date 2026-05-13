@@ -36,8 +36,8 @@ hl.config({
 		gaps_out = 4,
 		border_size = 2,
 		col = {
-			active_border = {color = {blue, base, base, blue}, angle = 45deg}},
-			inactive_border = {color = {blue, base, base, blue}, angle = 45deg}},
+			active_border = {color = {palette.blue, palette.base, palette.base, palette.blue}, angle = 45}},
+			inactive_border = {color = {palette.blue, palette.base, palette.base, palette.blue}, angle = 45}},
 		},
 		resize_on_border = false,
 		allow_tearing = false,
@@ -52,7 +52,7 @@ hl.config({
 			enabled = true,
 			range = 6,
 			render_power = 4,
-			color = crust,
+			color = palette.crust,
 		},
 		blur = {
 			enabled = true,

@@ -7,6 +7,6 @@ hl.on("hyprland.start", function ()
 	hl.exec_cmd("xrdb -merge ~/.Xresources")
 
 	-- idk is `silent` rule has been support...
-	-- hl.exec_cmd(volumctrl, {workspace = 5, silent = true})
-	-- hl.exec_cmd(terminal .. " --session monitor", {workspace = "special:running", silent = true})
+	-- hl.exec_cmd(apps.volumctrl, {workspace = 5, silent = true})
+	-- hl.exec_cmd(apps.terminal .. " --session monitor", {workspace = "special:running", silent = true})
 end)
