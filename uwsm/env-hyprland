@@ -11,8 +11,8 @@ export AQ_NO_MGPU_EXPLICIT=1
 export AQ_NO_MODIFIERS=1
 
 # Hyprland Environment Variables
-export HYPRLAND_CONFIG=~/.config/hypr/hypruwsm.conf
+export HYPRLAND_CONFIG=~/.config/hypr/hypruwsm.lua
 export HYPRLAND_TRACE=0
-export HYPRLAND_NO_RT=1
+export HYPRLAND_NO_RT=0
 export HYPRLAND_NO_SD_NOTIFY=0
 export HYPRLAND_NO_SD_VARS=0

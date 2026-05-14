@@ -4,9 +4,9 @@
 argv=(
 	--urgency=normal
 	--app-name=Hypridle
-	--icon="$HOME/.face"
+	--icon="${HOME}/.face"
 	"Welcome back, ${USER^}!"
 	"Good luck, Sir."
 )
 
-exec notify-send "${argv}"
+exec notify-send "${argv[@]}"

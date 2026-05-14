@@ -13,26 +13,26 @@ HYPRGAMEMODE=$(
 )
 
 GameModeParams="\
-keyword animation borderangle,0;\
 keyword animations:enabled 0;\
+keyword animation borderangle,0;\
+keyword decoration:shadow:enabled 0;\
 keyword decoration:blur:enabled 0;\
 keyword decoration:fullscreen_opacity 1;\
-keyword decoration:rounding 0;\
-keyword decoration:shadow:enabled 0;\
-keyword general:border_size 1;\
 keyword general:gaps_in 0;\
 keyword general:gaps_out 0;\
+keyword general:border_size 1;\
+keyword decoration:rounding 0;\
 "
 
 case "${OVERRIDEGM:-${HYPRGAMEMODE}}" in
 	1|enable|true)
 		hyprctl --batch "${GameModeParams}"
-		hyprctl notify 1 2400 "rgb(a6e3a1)" "GameMode [ ON ]"
+		hyprctl notify 1 2600 "rgb(a6e3a1)" "GameMode [ ON ]"
 		exit
 	;;
 	0|disable|false)
 		hyprctl reload
-		hyprctl notify 1 2400 "rgb(f38ba8)" "GameMode [ OFF ]"
+		hyprctl notify 1 2600 "rgb(f38ba8)" "GameMode [ OFF ]"
 		exit
 	;;
 esac

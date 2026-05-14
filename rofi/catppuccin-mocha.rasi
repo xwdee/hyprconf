@@ -1,5 +1,5 @@
 * {
-	bg-col:  #1e1e2e;
+	bg-col: #1e1e2e;
 	bg-col-light: #1e1e2e;
 	border-col: #1e1e2e;
 	selected-col: #1e1e2e;
@@ -13,7 +13,7 @@
 
 element-text, element-icon , mode-switcher {
 	background-color: inherit;
-	text-color:	   inherit;
+	text-color:	inherit;
 }
 
 window {
@@ -74,13 +74,13 @@ element-icon {
 }
 
 element selected {
-	background-color:  @selected-col;
+	background-color: @selected-col;
 	text-color: @fg-col2;
 }
 
 mode-switcher {
 	spacing: 0;
-  }
+}
 
 button {
 	padding: 10px;
@@ -91,8 +91,8 @@ button {
 }
 
 button selected {
-  background-color: @bg-col;
-  text-color: @blue;
+	background-color: @bg-col;
+	text-color: @blue;
 }
 
 message {

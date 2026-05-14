@@ -19,10 +19,10 @@ launch --location=hsplit --title=SCXTop sh -c 'exec scxtop'
 new_tab Enhanced
 
 # SOCKS5 Proxy / socat porting
-launch --location=hsplit --title=SOCKS5 flog.sh /home/xunta/.cache/sd-socatportfwd.log
+launch --location=hsplit --title=SOCKS5 journalctl --user -xafu socatportfwd.service
 
 # PreCleaned Shell / Zsh
 launch --location=hsplit --title=CleanShell env --ignore-environment zsh
 
 # Sharing Files / miniserve
-launch --location=hsplit --title=FilesToShare flog.sh /home/xunta/.cache/sd-sharedfiles.log
+launch --location=hsplit --title=FilesToShare journalctl --user -xafu sharedfiles.service
