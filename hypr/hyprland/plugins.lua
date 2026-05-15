@@ -9,7 +9,7 @@ hl.config({
 			bar_blur = true,
 			col.text = palette.text,
 			bar_title_enabled = true,
-			bar_text_size = 16,
+			bar_text_size = 18,
 			bar_text_font = "Maple Mono Light",
 			bar_text_align = "center",
 			bar_buttons_alignment = "right",
