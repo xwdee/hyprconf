@@ -16,5 +16,5 @@ hl.monitor(
 		position = "1920x60",
 		scale = 1.00,
 		bitdepth = 10,
-	},
+	}
 )

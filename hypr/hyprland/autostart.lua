@@ -1,4 +1,6 @@
 --- Startup Programs
+local apps = require("hyprland/programs")
+
 hl.on("hyprland.start", function ()
 	hl.exec_cmd("wl-paste --type text --watch clipman store")
 	hl.exec_cmd("hyprlock")

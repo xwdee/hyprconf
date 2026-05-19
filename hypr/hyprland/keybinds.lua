@@ -1,4 +1,6 @@
 --- Keybindings
+local apps = require("hyprland/programs")
+
 -- Variables
 local mainMod = "SUPER"
 local script = "~/.config/hypr/scripts"
@@ -91,10 +93,10 @@ hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(), {mouse = true})
 hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), {mouse = true})
 
 -- Move and resize windows
-hl.bind(mainMod .. " + up", hl.resize({x = 0, y = -20}), {repeating = true})
-hl.bind(mainMod .. " + down", hl.resize({x = 0, y = 40}), {repeating = true})
-hl.bind(mainMod .. " + left", hl.resize({x = -20, y = 0}), {repeating = true})
-hl.bind(mainMod .. " + right", hl.resize({x = 40, y = 0}), {repeating = true})
+hl.bind(mainMod .. " + up", hl.dsp.window.resize({x = 0, y = -20}), {repeating = true})
+hl.bind(mainMod .. " + down", hl.dsp.window.resize({x = 0, y = 40}), {repeating = true})
+hl.bind(mainMod .. " + left", hl.dsp.window.resize({x = -20, y = 0}), {repeating = true})
+hl.bind(mainMod .. " + right", hl.dsp.window.resize({x = 40, y = 0}), {repeating = true})
 hl.bind(mainMod .. " + SHIFT + up", hl.dsp.window.move({direction = "up"}))
 hl.bind(mainMod .. " + SHIFT + down", hl.dsp.window.move({direction = "down"})) 
 hl.bind(mainMod .. " + SHIFT + left", hl.dsp.window.move({direction = "left"}))
